@@ -15,14 +15,21 @@ header {
   border: 1px solid black;
   overflow: hidden;
 }
-img {
+#logo {
+  background-color: black;
   border-radius: 10px;
-  height: 100px;
   width: 85%;
+  height: 60px;
+  padding-top: 15px;
+  padding-left: 10px;
   position: absolute;
-  top: 13%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+#logo > img {
+  height: 30px;
+  width: 40%;
 }
 table {
   background-color: black;
@@ -32,7 +39,7 @@ table {
   top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 500px;
+  height: 450px;
   width: 85%;
 }
 #screen {
@@ -42,7 +49,7 @@ table {
   outline: none;
   background-color: black;
   color: rgb(255, 255, 255);
-  font-size: 24px;
+  font-size: 26px;
   padding: 0 15px;
 }
 td {
@@ -65,10 +72,17 @@ td {
 
 @media (min-width: 600px) {
   table {
-    height: 60%;
-    width: 85%;
+    height: 65%;
+    width: 40%;
   }
   #screen {
     padding: 0 12%;
+  }
+  #logo {
+    height: 70px;
+    width: 40%;
+  }
+  #logo > img {
+    height: 40px;
   }
 }
